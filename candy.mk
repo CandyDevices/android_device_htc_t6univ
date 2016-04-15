@@ -15,12 +15,12 @@
 #
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/candy/config/common_full_phone.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/candy/config/nfc_enhanced.mk)
 
 $(call inherit-product, device/htc/t6univ/full_t6univ.mk)
 
-PRODUCT_NAME := cm_t6univ
+PRODUCT_NAME := candy_t6univ
 PRODUCT_DEVICE := t6univ
