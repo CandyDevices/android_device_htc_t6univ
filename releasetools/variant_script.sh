@@ -5,12 +5,12 @@ set -e
 modelid=`getprop ro.boot.mid`
 
 case $modelid in
-    "0P3P10000") variant="t6vzw" ;;
-    "0P3P20000") variant="t6dwg" ;;
-    "0P3P30000") variant="t6dug" ;;
-    "0P3P40000") variant="t6tl" ;;
-    "0P3P70000") variant="t6spr" ;;
-    *)           variant="t6" ;;
+    "0P3P10000") variant="vzw" ;;
+    "0P3P20000") variant="dwg" ;;
+    "0P3P30000") variant="dug" ;;
+    "0P3P40000") variant="tl" ;;
+    "0P3P70000") variant="spr" ;;
+    *)           variant="gsm" ;;
 esac
 
 basedir="/system/blobs/$variant/"
