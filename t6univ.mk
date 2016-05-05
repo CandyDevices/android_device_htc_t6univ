@@ -129,6 +129,7 @@ PRODUCT_PACKAGES += \
     init.target.rc.gsm \
     init.qcom.rc \
     init.qcom.power.rc \
+    init.qcom.ril.sh \
     init.qcom.usb.rc \
     init.target.rc \
     ueventd.qcom.rc
