@@ -91,7 +91,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.fingerprint", "VERIZON/HTCOneMaxVZW/t6wl:4.4.2/KOT49H/333209.2:user/release-keys");
         property_set("ro.build.description", "3.09.605.2 CL333209 release-keys");
         property_set("ro.product.device", "t6wl");
-        property_set("ro.build.product", "htc_t6wl");
+        property_set("ro.build.product", "t6wl");
         property_set("ro.ril.vzw.feature", "1");
         property_set("ro.ril.oem.ecclist", "911,*911,#911");
         property_set("ro.ril.enable.a52", "0");
@@ -114,7 +114,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.fingerprint", "htc/sprint_wwe/t6whl:4.4.2/KOT49H/335898.5:user/release-keys");
         property_set("ro.build.description", "3.02.651.5 CL335898 release-keys");
         property_set("ro.product.device", "t6whl");
-        property_set("ro.build.product", "htc_t6whl");
+        property_set("ro.build.product", "t6whl");
         property_set("telephony.sms.pseudo_multipart", "1");
         property_set("ro.ril.oem.ecclist", "911");
         property_set("ro.ril.set.mtusize", "1422");
@@ -127,6 +127,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.fingerprint", "htc/htccn_chs_cu/t6dug:5.0.2/LRX22G/524896.8:user/release-keys");
         property_set("ro.build.description", "3.22.1402.8 CL524896 release-keys");
         property_set("ro.product.device", "t6dwg");
+        property_set("ro.build.product", "t6dwg");
     } else if (strstr(bootmid, "0P3P30000")) {
         /* t6dug (dual sim) */
         common_properties();
@@ -136,6 +137,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.fingerprint", "htc/htccn_chs_cu/t6dug:5.0.2/LRX22G/524896.8:user/release-keys");
         property_set("ro.build.description", "3.22.1402.8 CL524896 release-keys");
         property_set("ro.product.device", "t6dug");
+        property_set("ro.build.product", "t6dug");
     } else if (strstr(bootmid, "0P3P40000")) {
         /* t6tl (China) */
         common_properties();
@@ -144,6 +146,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.fingerprint", "htc/htccn_chs_cmcc/t6tl:5.0.2/LRX22G/524896.8:user/release-keys");
         property_set("ro.build.description", "3.22.1403.8 CL524896 release-keys");
         property_set("ro.product.device", "t6tl");
+        property_set("ro.build.product", "t6tl");
         property_set("persist.radio.tdscdma_present", "2");
     } else {
         common_properties();
@@ -152,6 +155,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.fingerprint", "htc/htc_europe/t6ul:5.0.2/LRX22G/525693.7:user/release-keys");
         property_set("ro.build.description", "4.13.401.7 CL525693 release-keys");
         property_set("ro.product.device", "t6");
+        property_set("ro.build.product", "t6");
     }
 
     property_get("ro.product.device", device);
