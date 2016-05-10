@@ -9,10 +9,26 @@ LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE		:= init.target.rc.dsd
+LOCAL_MODULE            := init.target.rc
+LOCAL_MODULE_TAGS       := optional eng
+LOCAL_MODULE_CLASS      := ETC
+LOCAL_SRC_FILES         := etc/init.target.rc
+LOCAL_MODULE_PATH       := $(TARGET_ROOT_OUT)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= init.target.rc.gsm
 LOCAL_MODULE_TAGS	:= optional eng
 LOCAL_MODULE_CLASS	:= ETC
-LOCAL_SRC_FILES		:= etc/init.target.rc.dsd
+LOCAL_SRC_FILES		:= etc/init.target.rc.gsm
+LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= init.target.rc.cdma
+LOCAL_MODULE_TAGS	:= optional eng
+LOCAL_MODULE_CLASS	:= ETC
+LOCAL_SRC_FILES		:= etc/init.target.rc.cdma
 LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
 
@@ -46,12 +62,4 @@ LOCAL_MODULE_TAGS	:= optional eng
 LOCAL_MODULE_CLASS	:= ETC
 LOCAL_SRC_FILES		:= etc/ueventd.qcom.rc
 LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE		:= init.qcom.ril.sh
-LOCAL_MODULE_TAGS	:= optional eng
-LOCAL_MODULE_CLASS	:= ETC
-LOCAL_SRC_FILES         := etc/init.qcom.ril.sh
-LOCAL_MODULE_PATH	:= $(TARGET_OUT_ETC)
 include $(BUILD_PREBUILT)

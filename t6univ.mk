@@ -128,14 +128,12 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.target.rc.cdma \
-    init.target.rc.dsd \
-    init.target.rc.gsm \
     init.qcom.rc \
     init.qcom.power.rc \
-    init.qcom.ril.sh \
     init.qcom.usb.rc \
     init.target.rc \
+    init.target.rc.cdma \
+    init.target.rc.gsm \
     ueventd.qcom.rc
 
 # Thermal
