@@ -132,8 +132,6 @@ PRODUCT_PACKAGES += \
     init.qcom.power.rc \
     init.qcom.usb.rc \
     init.target.rc \
-    init.target.rc.cdma \
-    init.target.rc.gsm \
     ueventd.qcom.rc
 
 # Thermal

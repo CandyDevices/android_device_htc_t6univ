@@ -116,6 +116,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.product.device", "t6whl");
         property_set("ro.build.product", "t6whl");
         property_set("telephony.sms.pseudo_multipart", "1");
+        property_set("persist.radio.mode_pref_nv10", "1");
         property_set("ro.ril.oem.ecclist", "911");
         property_set("ro.ril.set.mtusize", "1422");
     } else if (strstr(bootmid, "0P3P20000")) {

@@ -1,20 +1,40 @@
-on property:ro.build.product=t6wl
-    import init.target.rc.cdma
-
-on property:ro.build.product=t6whl
-    import init.target.rc.cdma
+on boot
 
 on property:ro.build.product=t6
-    import init.target.rc.gsm
+service kickstart /system/bin/qcks -1 modem_st1 -2 modem_st2 -3 radio_config -4 cdma_record -i /firmware/mdm/image/ -u
+    class core
+    user root
+    oneshot
+
+on property:ro.build.product=t6wl
+service kickstart /system/bin/qcks -1 modem_st1 -2 modem_st2 -3 radio_config -4 cdma_record -i /firmware/mdm/image/
+    class core
+    user root
+    oneshot
+
+on property:ro.build.product=t6whl
+service kickstart /system/bin/qcks -1 modem_st1 -2 modem_st2 -3 radio_config -4 cdma_record -i /firmware/mdm/image/
+    class core
+    user root
+    oneshot
 
 on property:ro.build.product=t6dug
-    import init.target.rc.gsm
+service kickstart /system/bin/qcks -1 modem_st1 -2 modem_st2 -3 radio_config -4 cdma_record -i /firmware/mdm/image/ -u
+    class core
+    user root
+    oneshot
 
 on property:ro.build.product=t6dwg
-    import init.target.rc.gsm
+service kickstart /system/bin/qcks -1 modem_st1 -2 modem_st2 -3 radio_config -4 cdma_record -i /firmware/mdm/image/ -u
+    class core
+    user root
+    oneshot
 
 on property:ro.build.product=t6tl
-    import init.target.rc.gsm
+service kickstart /system/bin/qcks -1 modem_st1 -2 modem_st2 -3 radio_config -4 cdma_record -i /firmware/mdm/image/ -u
+    class core
+    user root
+    oneshot
 
 on property:persist.radio.multisim.config=dsds
     start ril-daemon2
