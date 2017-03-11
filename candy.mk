@@ -17,10 +17,10 @@
 $(call inherit-product, device/htc/t6univ/full_t6univ.mk)
 
 # Inherit Lineage full phone configuration
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/candy/config/common_full_phone.mk)
 
 # Device naming
-PRODUCT_NAME := lineage_t6univ
+PRODUCT_NAME := candy_t6univ
 
 # Override build props
 PRODUCT_BUILD_PROP_OVERRIDES += \
